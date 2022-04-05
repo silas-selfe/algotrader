@@ -1,0 +1,26 @@
+{
+    "id": "578E1953",
+    "path": "~/Projects/algotrader/scripts/import.py",
+    "project_path": "scripts/import.py",
+    "type": "python",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1649196985128.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "39,0",
+        "scrollLine": "11"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1649197678,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1649197845489,
+    "read_only": false,
+    "read_only_alternatives": []
+}

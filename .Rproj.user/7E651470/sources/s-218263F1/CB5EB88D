@@ -1,0 +1,26 @@
+{
+    "id": "CB5EB88D",
+    "path": "~/Projects/algotrader/scripts/stock_actual2.R",
+    "project_path": "scripts/stock_actual2.R",
+    "type": "r_source",
+    "hash": "1382138230",
+    "contents": "",
+    "dirty": false,
+    "created": 1649197035360.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "86,0",
+        "scrollLine": "44"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1649197674,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1649197674612,
+    "read_only": false,
+    "read_only_alternatives": []
+}
