@@ -28,7 +28,7 @@ def data_receive(ticker):
   query_string = f'https://query1.finance.yahoo.com/v7/finance/download/{ticker}?period1={period1}&period2={period2}&interval={interval}&events=history&includeAdjustedClose=true'
   df = pd.read_csv(query_string)
   return df
-  
+
 
 #df = data_receive('AAPL')
 
@@ -45,7 +45,6 @@ soup = BeautifulSoup(response.content,'lxml')
 l = []
 mylist = []
 for item in soup.select('.simpTblRow'):
-  #print(item.select('[aria-label=Symbol]')[0].get_text())
   l = item.select('[aria-label=Symbol]')[0].get_text()
   mylist.append(l)
 
