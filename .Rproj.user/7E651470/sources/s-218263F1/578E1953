@@ -3,7 +3,7 @@
     "path": "~/Projects/algotrader/scripts/import.py",
     "project_path": "scripts/import.py",
     "type": "python",
-    "hash": "1911688624",
+    "hash": "2577309331",
     "contents": "",
     "dirty": false,
     "created": 1649196985128.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "39,0",
-        "scrollLine": "11"
+        "cursorPosition": "10,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1649217842,
+    "lastKnownWriteTime": 1649218383,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649217842332,
+    "last_content_update": 1649218383919,
     "read_only": false,
     "read_only_alternatives": []
 }

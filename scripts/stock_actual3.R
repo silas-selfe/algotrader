@@ -121,8 +121,11 @@ tab.fill <- function(ts, table){
 }
 
 
+
 df <- df %>% 
   as_tsibble(., index = Week) # works
+
+
 
 best.model <- as.data.frame(matrix(nrow = ncol(df), ncol = 2))
 log.table <- as.data.frame(matrix(nrow = 12, ncol = 2))

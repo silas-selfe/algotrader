@@ -9,8 +9,6 @@ from bs4 import BeautifulSoup
 
 
 
-#ticker = 'AAPL'
-
 
 def data_receive(ticker):
   period1 = int(time.mktime(datetime.datetime(2020, 1, 1, 00, 00).timetuple())) # 23, 59
@@ -29,8 +27,6 @@ def data_receive(ticker):
   df = pd.read_csv(query_string)
   return df
 
-
-#df = data_receive('AAPL')
 
 
 
@@ -60,12 +56,3 @@ for item in soup.select('.simpTblRow'):
 
 
 
-for item in soup.select('.simpTblRow'):
-  try:
-    print(item)
-    
-    print("-------------")
-    
-  except Exception as e:
-    raise e
-    print('')
