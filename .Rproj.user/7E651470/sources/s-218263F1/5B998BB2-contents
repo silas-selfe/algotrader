@@ -208,7 +208,6 @@ for(i in 1:(nrow(best.model)-1)){
   b.m = best.model[i,2]
   
   all.vals <- best.preds(df2, b.m)
-  #best.model[i,3:14] <- round(best.preds(df2,b.m),3)
   best.model[i,3:14] <- round(all.vals$.mean,3)
   val.dates <- all.vals$Week
   print(i)

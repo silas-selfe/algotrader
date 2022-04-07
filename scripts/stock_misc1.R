@@ -272,16 +272,40 @@ tab.fill <- function(ts, table){
 
 
 
-
-
-
-
-
-
-
 tab.iter = best.log(df2, 6)
 
 
+
+# from actual 4
+
+
+vicD <- aus_livestock %>%
+  dplyr::filter(Animal == "Pigs", State == "Victoria") %>%
+  select(-Animal, -State) %>%
+  mutate(Month = yearmonth(as.Date(Month, format="%Y/%U"))) %>%
+  as_tsibble(index = Month)
+
+
+idk <- df %>%
+  select(df[,c(1,2)]) %>%
+  as_tsibble(index = Wk)
+
+
+
+ticker.best.pred <- function(ticker){
+  
+  ticker = ticker
+  one.ticker <- df %>%
+    select(Wk, ticker) %>%
+    as_tsibble(index = Wk)
+  
+  return(one.ticker)
+}
+
+apl <- ticker.best.pred("AAPL")
+ts <- apl
+
+names(ts)[2] <- "Close"
 
 
 

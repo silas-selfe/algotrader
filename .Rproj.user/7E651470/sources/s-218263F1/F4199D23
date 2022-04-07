@@ -1,27 +1,27 @@
 {
-    "id": "5B998BB2",
-    "path": "~/Projects/algotrader/scripts/stock_actual3.R",
-    "project_path": "scripts/stock_actual3.R",
+    "id": "F4199D23",
+    "path": "~/Projects/algotrader/scripts/stock_actual4.R",
+    "project_path": "scripts/stock_actual4.R",
     "type": "r_source",
-    "hash": "4180100975",
+    "hash": "2063653550",
     "contents": "",
     "dirty": false,
-    "created": 1649208922319.0,
+    "created": 1649293459412.0,
     "source_on_save": false,
-    "relative_order": 12,
+    "relative_order": 9,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "137,22",
-        "scrollLine": "109"
+        "cursorPosition": "106,0",
+        "scrollLine": "79"
     },
     "folds": "",
-    "lastKnownWriteTime": 1649298129,
+    "lastKnownWriteTime": 1649298161,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649298129201,
+    "last_content_update": 1649298161321,
     "read_only": false,
     "read_only_alternatives": []
 }
