@@ -7,9 +7,7 @@ from pandas.tseries.offsets import BDay
 from bs4 import BeautifulSoup
 
 
-
-
-
+# pulls data for individual tickers
 def data_receive(ticker):
   period1 = int(time.mktime(datetime.datetime(2020, 1, 1, 00, 00).timetuple())) # 23, 59
 
@@ -29,9 +27,7 @@ def data_receive(ticker):
 
 
 
-
-
-
+# pulls tickers for up to 250 stocks on the 'most active' list
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
 url = 'https://finance.yahoo.com/most-active?offset=0&count=250'
 

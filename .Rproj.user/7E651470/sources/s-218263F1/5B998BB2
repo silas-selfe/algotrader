@@ -3,7 +3,7 @@
     "path": "~/Projects/algotrader/scripts/stock_actual3.R",
     "project_path": "scripts/stock_actual3.R",
     "type": "r_source",
-    "hash": "3913198934",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1649208922319.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "127,0",
-        "scrollLine": "110"
+        "cursorPosition": "59,2",
+        "scrollLine": "26"
     },
     "folds": "",
-    "lastKnownWriteTime": 1649218382,
+    "lastKnownWriteTime": 1649252569,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649218382466,
+    "last_content_update": 1649252569083,
     "read_only": false,
     "read_only_alternatives": []
 }

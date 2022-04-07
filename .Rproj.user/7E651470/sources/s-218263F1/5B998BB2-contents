@@ -218,5 +218,11 @@ best.model[1,3:14] <- best.preds(df2,b.m)
 
 
 
-format <- as.data.frame(t(best.model[,c(1,3:14)]))
+format <- as.data.frame(t(best.model[,c(1,3:14)])) # still need to incorporate date into this
 format <- format %>% row_to_names(row_number = 1)
+
+
+
+
+
+
