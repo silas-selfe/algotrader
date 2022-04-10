@@ -42,29 +42,13 @@ my.prep <- function(data){
   
   ts <- data %>%
     group_by(Wk) %>%
-    summarize(Close = (sum(Close) / length(day))) %>%
+    summarize(Close = as.double((sum(Close) / length(day)))) %>%
     as_tsibble(index = Wk)
   
   return(ts)
 }
 
 
-my.prep <- function(data){
-  dup <- tail(data,2)
-  if(dup[1,1] == dup[2,1]){
-    data <- slice(data,1:n()-1)
-  }
-  data$Week = yearweek(as.Date(data$Date))
-  data$Wk = as.Date(data$Week, format = "%Y/%U")
-  data$day = as.POSIXlt(data$Date)$wday
-  
-  ts <- data %>%
-    group_by(Wk) %>%
-    summarize(Close = (sum(Close) / length(day))) %>%
-    as_tsibble(index = Wk)
-  
-  return(ts)
-}
 
 
 ## ---- data.prep
@@ -88,9 +72,12 @@ for(i in 1:length(tickers)){
 }
 
 
+#### df$Wk <- as.numeric(as.POSIXct(df$Wk))
+#### write.csv(df, "~/Projects/algotrader/data/Apr07_2022.csv", row.names=FALSE)
+
+
 # above is good
 # =================================================================================
-
 
 
 
@@ -105,7 +92,7 @@ data.ready <- function(name){
 }                             # these are trying to iterate through df to properly format
                               # each ticker to find its best model.   needs more work
 
-for(i in 1:5){#length(df)){
+for(i in 1:6){#length(df)){
   name = colnames(df[,i+1])
   insert.ready = data.ready(name)
 }
@@ -122,13 +109,13 @@ fc <- fit %>% forecast(h = 4)
 fit %>% forecast(h = 12) %>%
   autoplot(insert.ready)
 # this is all to test the above manipulations
-
+ts <- insert.ready
 
 
 
 
 # this is to compare with the above. data still plotting weird ------ FIND SOLUTION
-ts <- ts(df$CCL, frequency = 53, start = 2020)
+ts <- ts(df$AAPL, frequency = 53, start = 2020)
 f2 <- forecast(
   ts,
   method = c("arima"),

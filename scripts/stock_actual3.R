@@ -64,7 +64,8 @@ for(i in 1:length(tickers)){
   names(df)[i+1] <- tickers[i]
 }
 
-#### write.csv(df, "~/Projects/algotrader/data/Apr05_2022.csv", row.names=FALSE)
+#### df$Week <- as.numeric(as.POSIXct(df$Week))
+#### write.csv(df, "~/Projects/algotrader/data/Apr07_2022.csv", row.names=FALSE)
 
 
 # Takes data for each stock and runs it through 12 models. 
