@@ -4,4 +4,8 @@ All data is scraped from Yahoo Finance in the 'import.py' script. The python cod
 
 The data scraped in the python script is called into the R workspace where the work is done. 
 
-The highest number 'actual' is the most recent script. . 
+The highest number 'actual' is the most recent script. 
+
+
+
+Actual 3 is the last working script. Actual 4 is making significant changes. 
