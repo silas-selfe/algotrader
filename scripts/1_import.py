@@ -14,9 +14,9 @@ def data_receive(ticker):
   period2_d = datetime.datetime.today()
   period2 = int(datetime.datetime.utcnow().timestamp())
   if datetime.date.weekday(period2_d) == 5: # Saturday
-    period2 = period2 - datetime.timedelta(days = 1).total_seconds()
+    period2 = period2 - int(datetime.timedelta(days = 1).total_seconds())
   elif datetime.date.weekday(period2_d) == 6: # Sunday
-    period2 = period2 - datetime.timedelta(days = 2).total_seconds()
+    period2 = period2 - int(datetime.timedelta(days = 2).total_seconds())
   else:
     period2 = int(datetime.datetime.utcnow().timestamp());
     

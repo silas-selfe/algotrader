@@ -60,7 +60,7 @@ tickers <- py$mylist
 
 # creates dataset of all tickers received and populates with average 
 # weekly closing price. 
-ts <- my.prep(py$data_receive(tickers[1]))
+ts <- my.prep(py$data_receive('AAPL')) # using AAPL to ensure all dates
 df <- ts[,1]
 for(i in 1:length(tickers)){
   ts <- my.prep(py$data_receive(tickers[i]))
@@ -71,7 +71,7 @@ for(i in 1:length(tickers)){
   names(df)[i+1] <- tickers[i]
 }
 
-
+uhh <- t(df)
 #### df$Wk <- as.numeric(as.POSIXct(df$Wk))
 #### write.csv(df, "~/Projects/algotrader/data/Apr07_2022.csv", row.names=FALSE)
 
