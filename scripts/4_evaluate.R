@@ -8,6 +8,9 @@ library(margins)
 #library(ISLR)
 
 
+
+
+
 ## ---- comparing
 
 # preps data for other functions
@@ -67,9 +70,9 @@ my_plot <- function(df_c){
 
 
 # testing
-from = 24
-to = 8
-ticker = 'NIO'
+from = 48 # weeks into the past
+to = 4 # weeks into the future
+ticker = 'TSLA'
 momentum(dPrep(from, to, df1, ticker))
 my_plot(dPrep(from, to, df1, ticker))
 
@@ -86,7 +89,7 @@ for(i in 2:length(df1)){
 }
 
 pickPrep <- pickPrep[order(-pickPrep$Score),]
-my_plot(dPrep(from,to,df1,'SOFI'))
+my_plot(dPrep(from,to,df1,'NVDA'))
 
 
 

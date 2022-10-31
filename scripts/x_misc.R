@@ -33,7 +33,14 @@ df_c[,1] <- x_axis
 
 
 
+test <- df1 %>%
+  select(Date, TSLA) %>%
+  as_tsibble(index = Date)
 
+#library(zoo)
+test %>%
+  autoplot(TSLA)
+  geom_line(aes(y='5-MA'), colour="#D55E00")
 
 
 stock <- function(from, to, df1, ticker){
